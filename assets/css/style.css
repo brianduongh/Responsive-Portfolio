@@ -1,0 +1,204 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: #eeeeee;
+  line-height: 2;
+  color: #777777;
+  font-size: 1.1rem;
+}
+
+h1 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: inline-block;
+    color: #777777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #49aaa5;
+    color: white;
+}
+
+hr {
+  height: 2px;
+  background: #dddddd;
+  border: none;
+  margin: 20px 0px;
+}
+
+/* Middle Section */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.middle {
+  background: #ffffff;
+  margin: 20px 0px;
+  padding: 30px;
+  border: solid 2px #dddddd;
+}
+
+.middle h1 {
+  color: #49aaa5;
+}
+
+.content {
+  flex: 1 0 auto;
+  margin-bottom: 20px;
+}
+
+/* About */
+.about {
+  overflow: auto;
+}
+
+.about img {
+  float: left;
+  padding: 0;
+  margin: 0 20px 10px 0;
+  width: 100%;
+  height:auto;
+  max-width: 300px;
+}
+
+/* Portfolio */
+.portfolio {
+  position: relative;
+  overflow: auto;
+}
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 20px 20px 0px;
+  overflow: auto;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+/* Contact */
+.contact input {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 2px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+button {
+  background-color: #49aaa5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 2px 0 2px;
+  cursor: pointer;
+}
+
+/* Header */
+.header {
+  flex-shrink: 0;
+  background: #ffffff;
+  border-bottom: solid 2px #cccccc;
+}
+
+.header .container ul li #brand {
+  background: #49aaa5;
+  color: white;
+}
+
+.navLinks {
+  padding-right: 50px;
+}
+/* Footer */
+.footer {
+  flex-shrink: 0;
+  border-top: 8px solid #4aaaa5;
+  background: #666666;
+  text-align: center;
+  padding: 30px 0 5px 0;
+  color: #c5b7af;
+  font-size: .7em
+}
+
+/* When screen is smaller than 980px */
+@media only screen and (max-width: 980px) {
+  .middle {
+    margin: 25px;
+    max-width: 600px;
+  }
+}
+
+/* When screen is smaller than 640px */
+@media only screen and (max-width: 640px) {
+  .about img {
+    float:none;
+    padding: 0;
+    margin: 0 20px 10px 0;
+  }
+  .portfolio {
+    width: 50%;
+    margin: auto;
+  }
+}
